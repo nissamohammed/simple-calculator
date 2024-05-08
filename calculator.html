@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./calcstyle.css">
+    <!--fontawsome CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <h1 class="mt-5 p-5"  style="color: rgb(214, 21, 21); text-align: center;">CALCULATOR</h1>
+    <div class="outer_div mt-5">
+         <div class="inner_div">
+            <form>
+               <div class="d-flex mt-3">
+                <input id="textbox" type="text" placeholder="0" class="form-control" readonly>
+                <button type="button" class="btn_ac ms-3" onclick="ac()">AC</button>
+               </div>
+               <div class="p-5 mt-5">
+                <button id="btnstyle" type="button" class="btn_7 ms-3" onclick="display(7)">7</button>
+                <button id="btnstyle" type="button" class="btn_8 ms-3" onclick="display(8)">8</button>
+                <button id="btnstyle" type="button" class="btn_9 ms-3" onclick="display(9)">9</button>
+                <button id="btnstyle" type="button" class="btn_division ms-3"onclick="display('/')" >/</button>
+               </div>
+               <div class="p-5 mt-5">
+                <button id="btnstyle" type="button" class="btn_4 ms-3" onclick="display(4)">4</button>
+                <button id="btnstyle" type="button" class="btn_5 ms-3" onclick="display(5)">5</button>
+                <button id="btnstyle" type="button" class="btn_6 ms-3" onclick="display(6)">6</button>
+                <button id="btnstyle" type="button" class="btn_multiplication ms-3" onclick="display('*')">X</button>
+               </div>
+               <div class="p-5 mt-5">
+                <button id="btnstyle" type="button" class="btn_1 ms-3" onclick="display(1)">1</button>
+                <button id="btnstyle" type="button" class="btn_2 ms-3" onclick="display(2)">2</button>
+                <button id="btnstyle" type="button" class="btn_3 ms-3" onclick="display(3)">3</button>
+                <button id="btnstyle" type="button" class="btn_substraction ms-3" onclick="display('-')">-</button>
+               </div>
+               <div class="p-5 mt-5">
+                <button id="btnstyle" type="button" class="btn_0 ms-3" onclick="display(0)">0</button>
+                <button id="btnstyle" type="button" class="btn_dot ms-3" onclick="display('.')">.</button>
+                <button id="btnstyle" type="button" class="btn_equals ms-3" onclick="equal()">=</button>
+                <button id="btnstyle" type="button" class="btn_add ms-3" onclick="display('+')">+</button>
+               </div>
+               <div class="p-5 mt-5">
+                <button id="btnstyle" type="button" class="btn_backspace ms-3" onclick="back()" ><i class="fa-solid fa-delete-left"></i></button>
+                
+               </div>
+
+            </form>
+         </div>
+    </div>
+</body>
+<script src="./calc.js"></script>
+</html>

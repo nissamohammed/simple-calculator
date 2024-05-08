@@ -1,0 +1,54 @@
+body{
+    background-color: rgb(7, 6, 6);
+}
+.outer_div{
+   background-color: var(--black);
+   /*background-color: black;*/
+    width: 500px;
+    height: 600px;
+    margin-left: 500px;
+    margin-top: 30px;
+    /*border: 10px  rgba(214, 238, 238, 0.495);*/
+   /* border-color: white;*/
+    border-radius: 5%;
+    box-shadow: 0 4px 8px 0 rgba(216, 213, 213, 0.2), 0 6px 20px 0 rgba(239, 233, 233, 0.19);
+    /*box-shadow: 0 4px 8px 0 rgba(232, 72, 72, 0.2), 0 6px 20px 0 rgba(247, 67, 67, 0.19);*/
+}
+
+/* golbal declaration*/
+:root{
+--black: rgba(16, 17, 17, 0.495);
+}
+#textbox{
+    margin-left: 10px;
+    margin-top: 20px;
+    width: 400px;
+    height: 50px;
+    background-color: var(--black);
+    /*background-color: rgb(16, 16, 16);*/
+    border-radius: 10px;
+    color: aliceblue;
+    border-color: white;
+    font-size: 20px;
+    text-align: right;
+}
+.btn_ac{
+color: red;
+background-color: var(--black);
+border-radius: 10px;
+height: 53px;
+width: 75px;
+border-color: aliceblue;
+font-size: 20px;
+}
+#btnstyle{
+   width: 110px; 
+   height: 90px;
+   margin-left: 10px;
+   margin-top: 10px;
+   background-color: var(--black);
+   border-radius: 10px;
+   border-color: aliceblue;
+   color: white;
+   font-size:20px;
+}
